@@ -48,3 +48,17 @@ ros2 run ros2_hello_world hello_node
 [INFO] [1700000001.123456789] [hello_world_node]: Hello, World!
 ...
 ```
+
+---
+
+## ROS 2 Build and Execution Notes
+
+This package implements a simple ROS 2 C++ node that prints
+"Hello, World!" once every second using a timer and `rclcpp`.
+
+### Expected Build & Run Commands
+```bash
+colcon build
+source install/setup.bash
+ros2 run hello_world_pkg hello_node
+
